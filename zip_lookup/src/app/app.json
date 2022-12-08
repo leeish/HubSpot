@@ -1,0 +1,6 @@
+{
+  "name": "Zip Lookup App",
+  "description": "Searches multiple zip code tables for a match",
+  "scopes": ["hubdb", "collector.graphql_schema.read", "collector.graphql_query.execute"],
+  "public": false
+}
