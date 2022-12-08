@@ -22,6 +22,8 @@ The serverless functions expects requires the following:
 
 Once deployed, run a GET request against the URL: `https://[portal_id].hs-sites.com/_hcms/api/zip-lookup?zip=[zip_code]`
 
+[Example Link](https://21975837.hs-sites.com/_hcms/api/zip-lookup?zip=75081)
+
 ## TODO
 
 1. Handle missing / invalid zip codes
