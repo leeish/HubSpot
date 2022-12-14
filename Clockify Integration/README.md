@@ -48,7 +48,7 @@ ___
 
 Clears the `email_sent` and `meetings_booked` sheets in the workbook and populates them with the most recent data from Gmail and Google Calendar.
 
-** Dependencies **
+**Dependencies**
 - [writeRecentSentEmail](#writeRecentsentemail)
 - [writeRecentMeetings](#writerecentmeetings)
 ___
@@ -57,20 +57,20 @@ ___
 
 Log Clockify activities to Viktor's portal.
 
-** Dependencies **
+**Dependencies**
 - [log_all_activities](#log_all_activities)
 ___
 
 ### fetchServices
 
-** Dependencies **
+**Dependencies**
 - [enrich_customers](#enrich_customers)
 ___
 
 ### updateInternals
 
 
-** Dependencies **
+**Dependencies**
 - [updateInternalRecurrences](#updateinternalrecurrences)
 ___
 
@@ -114,7 +114,7 @@ ___
 
 Fetches the projects from Clockify and then matches them against the `customers` sheet in the workbook.
 
-** Dependencies **
+**Dependencies**
 - [getServices](#getservices)
 - [matchCustomerProjects](#matchcustomerprojects)
 ___
