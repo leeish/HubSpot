@@ -39,7 +39,7 @@ The Clockify G-Suite integration code will check for emails and calendar items f
 
 | Name | Type | Description |
 | --- | --- | --- |
-| version_string | 'String' | Versionsing string |
+| version_string | `String` | Versionsing string |
 | config_map | `Object` | Contains config mapping from `config` sheet |
 | all_tags | `Object` | Tag dictionary from Clockify |
 | min_adjusted_meeting_length | `float` | ... |
@@ -288,3 +288,4 @@ ___
 - Is there a possibility to merge [effective_meeting_times](#effective_meeting_times) & [effective_email_times](#effective_email_times) into a single function that essentially handles null `to_timestamp` and uses the `email_max_minutes` instead.
 - Should we implement a global debug logger with a single variable across all functions instead of just in [log_meetings](#log_meetings).
 - Consider making base URLs globals instead of written each time.
+- Need some explinations of some of the sheet configuration items, I think Viktor has this in a doc.
