@@ -260,14 +260,14 @@ ___
 
 - Mix of `camelCase` and `snake_case` throughout the document.
 - Some variables in `config` sheet and other variables in code.
-- hs_analytics_token should probably be embedded in code
-- Consider abstracting API calls to function
-- Move `enrich_customers` into `fetchServies` function. (`enrich_services` isn't used anywhere else)
-- Many functions rely on `update_globals` is there a way to refactor to make that cleaner
-- What config values should be optional/required if any and can we set defaults. Currently `autoresponder_subject_strings` is only optional value
-- Is there a way to validate config values and provide error/handling feedback if something bad is put in
-- Could `domains` in `domainToIds` ever be a string. Judging from the code it appears not.
-- `domainToIds` could return a descriptive object instead of a tuple array.
-- Some function names seem to indicate they'll return mutliple results but actually return a single result. [effective_meeting_times](#effective_meeting_times) returns a single meeting window. See also [effective_email_times](#effective_email_times), [domainToIds](#domain-to-ids)
+- `hs_analytics_token` should probably be embedded in code.
+- Consider abstracting API calls to single function to separate API logic and processing logic.
+- Move [enrich_customers](#enrich_customers) into [fetchServies](#fetchservies) function. ([enrich_customers](#enrich_customers) isn't used anywhere else).
+- Many functions rely on [update_globals`](#update_globals) is there a way to refactor to make that cleaner.
+- What config values should be optional/required if any and can we set defaults. Currently `autoresponder_subject_strings` is only optional value.
+- Is there a way to validate config values and provide error/handling feedback if something bad is put in.
+- Could `domains` in [domainToIds](#domaintoids) ever be a string. Judging from the code it appears not.
+- [domainToIds](#domaintoids) could return a descriptive object instead of a tuple array.
+- Some function names seem to indicate they'll return mutliple results but actually return a single result. [effective_meeting_times](#effective_meeting_times) returns a single meeting window. See also [effective_email_times](#effective_email_times), [domainToIds](#domain-to-ids).
 - Is there a possibility to merge [effective_meeting_times](#effective_meeting_times) & [effective_email_times](#effective_email_times) into a single function that essentially handles null `to_timestamp` and uses the `email_max_minutes` instead.
-- Should we implement a global debug logger with a single variable across all functions instead of just in [log_meetings](#log_meetings)
+- Should we implement a global debug logger with a single variable across all functions instead of just in [log_meetings](#log_meetings).
