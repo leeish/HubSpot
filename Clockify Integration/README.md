@@ -3,6 +3,7 @@
 The Clockify G-Suite integration code will check for emails and calendar items from the current user and log those as activites in Clockify if there are openings at those times.
 
 ## Table of Contents
+- [Globals](#globals)
 - [Events](#events)
     - [onOpen](#onopen)
 - [Actions](#actions)
@@ -34,6 +35,17 @@ The Clockify G-Suite integration code will check for emails and calendar items f
     - [writeRecentSentEmail](#writerecentsentemail)
 - [Notes](#notes)
 
+## Globals
+
+| Name | Type | Description |
+| --- | --- | --- |
+| version_string | 'String' | Versionsing string |
+| config_map | `Object` | Contains config mapping from `config` sheet |
+| all_tags | `Object` | Tag dictionary from Clockify |
+| min_adjusted_meeting_length | `float` | ... |
+| max_meeting_start_delay | `float` | ... | 
+| min_email_minutes | `int` | Number of minutes for... |
+| max_email_overlap | `int` | Number of minutes for... |
 
 ## Events
 
