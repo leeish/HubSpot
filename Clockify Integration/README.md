@@ -53,6 +53,8 @@ The Clockify G-Suite integration code will check for emails and calendar items f
 
 Populates custom menu in the wookbook.
 ___
+___
+
 
 ## Actions
 
@@ -85,6 +87,8 @@ ___
 **Dependencies**
 - [updateInternalRecurrences](#updateinternalrecurrences)
 ___
+___
+
 
 ## Functions
 
@@ -266,7 +270,7 @@ ___
 
 Fetches recently sent emails from the users Gmail and writes them to the `email_sent` sheet in the workbook.
 ___
-
+___
 
 ## Notes
 
@@ -283,3 +287,4 @@ ___
 - Some function names seem to indicate they'll return mutliple results but actually return a single result. [effective_meeting_times](#effective_meeting_times) returns a single meeting window. See also [effective_email_times](#effective_email_times), [domainToIds](#domain-to-ids).
 - Is there a possibility to merge [effective_meeting_times](#effective_meeting_times) & [effective_email_times](#effective_email_times) into a single function that essentially handles null `to_timestamp` and uses the `email_max_minutes` instead.
 - Should we implement a global debug logger with a single variable across all functions instead of just in [log_meetings](#log_meetings).
+- Consider making base URLs globals instead of written each time.
